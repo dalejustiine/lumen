@@ -9,7 +9,9 @@
         "laravel/lumen-framework": "5.4.*",
         "vlucas/phpdotenv": "~2.2",
         "flipbox/lumen-generator": "^5.4",
-        "dingo/api": "1.0.*@dev"
+        "dingo/api": "1.0.*@dev",
+        "tymon/jwt-auth": "^0.5.12",
+        "laravelista/lumen-vendor-publish": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -19,7 +21,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

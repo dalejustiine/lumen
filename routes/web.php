@@ -29,6 +29,6 @@ $api->version('v1', function($api) {
     $api->get('/grades/{student_number}/{preference_id}', 'App\Http\Controllers\StudentController@getGrades');
 });
 
-// $app->get('/', function () use ($app) {
-//     return $app->version();
-// });
+$app->get('/', function () use ($app) {
+    return 'Student API - ' . $app->version();
+});
